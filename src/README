@@ -23,7 +23,7 @@ into the Bonus package.
 
 
 2)
-The �infiniteWorld� function is responsible for creating
+The infiniteWorld function is responsible for creating
 new terrain, trees and coins in the game, as the player's
 avatar moves, in order to create an "infinite world"
 effect. It does so by using the avatar's x-coordinate as
