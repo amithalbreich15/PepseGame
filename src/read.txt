@@ -1,0 +1,16 @@
+Dilemas we had or design decisions we had to make during the building of the Game Engine:
+
+In the beggining we decided to start the Game build from scratch and implement the most easy parts such as Sky, Sun, Sun Halo and terrain
+without the Perlin Noise so we will first have the basis for the game. Later on we decided to deal with implementing the Avatar and add it's 
+functionality and movement. The next stage was to implement the trees using the Tree Factory - we left the behaviour of the leaves to the end
+of the tree implementation because it included scheduled task and use of many transitions which we had to explore and reailze.
+We wanted to make our Game unique by adding more behaviour to the Avatar such as fire Blasts to defeat a dragon that is summoned 
+according to the user's progress in the game which is made by collecting coins. The more coins the user collects - 
+the more times the Dragon will be summoned.
+We had Dilemas about how to implement the classes we added to the Bonus Package - what object will hold different information about the
+game such as coinCounter, livesCounter etc...
+
+We had a Dilema about how to make the game run faster given the InfiniteWorld implementation which was at first very heavy and made the
+gameplay very stuck - we used a big "window" that saves 3 times of the original's game window size filled with Game Objects
+and it made the gameplay very stuck. We fixed it by narrowing the window to 2 times the original window size filled with Object and in this
+case we reduced the amount of Game Objects in a specific delta time - and it made the GamePlay more smooth.
